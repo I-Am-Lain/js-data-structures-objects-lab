@@ -4,8 +4,7 @@
 const driver = {}
 
 function updateDriverWithKeyAndValue(d, k, v) {
-    let myObj = {}
-    Object.assign(myObj, d)
+    let myObj = Object.assign({}, d)
     
     myObj[k] = v
 
@@ -19,8 +18,7 @@ function destructivelyUpdateDriverWithKeyAndValue(d, k, v) {
 }
 
 function deleteFromDriverByKey(d, k){
-    let myObj = {}
-    Object.assign(myObj, d)
+    let myObj = Object.assign({}, d)
     
     delete myObj[k]
 
